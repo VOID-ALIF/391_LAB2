@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tools1.css">
+</head>
+<body oncontextmenu="return false" onload="fetchQuote(quotes, author),addNumbers()">
+
+
+    <h1 id="header">Tools to Try</h1>
+
+    <hr id="line">
+
+
+    <div class="container-converter">
+
+        <div id="converter">
+            <h1 class="item-header">Weight Converter.</h1>
+            <span id="converter-text">Convert: </span><input id="converter-input">
+            <select name="conversion-unit" id="conversion-unit">
+                <option value="lbkg">LB to KG</option>
+                <option value="kglb">KG to LB</option>
+            </select>
+            <button onclick="getInputValue()" type="button" id="converter-button">Go</button>
+            <span id="converter-result"></span>
+        </div>
+    </div>
+
+    <div class="container-math">
+        <h1 class="item-header">Find Min,Max,Avg,Sum and Reverse.</h1>
+        <form action="#"> <span id="math-input">Input Series of Number:
+            </span><input id="math-input-numbers" type="text">
+            <div id="max-text">Max: <span id="max">0</span></div>
+
+            <div id="min-text">Min: <span id="min">0</span></div>
+
+            <div id="sum-text">Sum: <span id="sum">0</span></div>
+
+            <div id="avg-text">Average: <span id="avg">0</span></div>
+
+            <div id="reverse-text">Reverse Order: <span id="reverse">Null</span></div>
+        </form>
+    </div>
+
+    <div class="container-magic">
+        <h1 class="item-header" id="magic-header">Interactive UI.</h1>
+        <textarea id="magic" type="text" rows="15" cols="54"></textarea>
+        <div id="magic-buttons">
+            <button onclick="clearAll()" type="button" id="clear">Clear it</button>
+            <button onclick="capitalize()" type="button" id="caps" value="OFF">Capitalize</button>
+            <button onclick="sortLines()" type="button" id="sort">Sort</button>
+            <button onclick="reverseLines()" type="button" id="reverse-magic">Reverse</button>
+            <button onclick="stripBlank()" type="button" id="strip">Strip Blank</button>
+            <button onclick="addLineNumbers()" type="button" id="addNum">Add Numbers</button>
+            <button onclick="shuffle()" type="button" id="shuffle">Shuffle</button>
+        </div>
+    </div>
+
+    <div class="container-quote-box">
+
+        <div id="quotes">
+            <div id="text">"This is a quote"</div>
+            <div id="author">- Fahim Adib</div>
+        </div>
+        <div id="buttons">
+            <button onclick="button1()" type="button" id="button1"></button>
+            <button onclick="button3()" type="button" id="button3"></button>
+            <button onclick="button2()" type=" button" id="button2"></button>
+            <button onclick="button4()" type="button" id="button4"></button>
+        </div>
+    </div>
+<script src="tools1.js"></script>
+</body>
+</html>
